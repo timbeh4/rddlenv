@@ -1,0 +1,13 @@
+//The instance block initialises the states, number of actions, discount factor etc
+
+instance test_env_inst {
+         domain = test_env;
+         init-state {
+              state = 0;
+              done = false;
+         };
+         max-nondef-actions = 1; // number of concurrent actions allowed in a given time step
+         horizon = 5;            // total number of time steps
+         discount = 0.9;         // discount factor
+}
+
