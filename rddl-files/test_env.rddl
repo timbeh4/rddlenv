@@ -1,3 +1,7 @@
+//Simple MDP environment with 4 states and 2 actions
+//See state diagram for more details
+
+
 domain test_env {
 
         requirements { 
