@@ -24,7 +24,7 @@ domain test_env {
 
         cpfs {  
                 //choose a state with given probabilities that sum to 1
-	              sample = Discrete(enum_state, 
+	        sample = Discrete(enum_state, 
                                 @state0 : 0,
                                 @state1 : if (action == false ^ state == 0) then 0.75 else 0, 
                                 @state2 : if (action == false ^ state == 0) then 0.25 else if (action == true ^ state == 0) then 1 else 0,
@@ -32,7 +32,7 @@ domain test_env {
                                 );
 
 
-                done' = if (state == 3) then true else false;  //updating new done state 
+                done' = if (sample == @state3) then true else false;  //updating new done state 
                 
                 //updating new state variable according to sampled state given state action pair
                 state' = switch(sample) {  
