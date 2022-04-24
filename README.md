@@ -1,4 +1,4 @@
-# test-env
+# rddlenv
 Modelling a simple MDP using RDDL (https://github.com/ssanner/rddlsim)
 
 
