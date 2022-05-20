@@ -3,7 +3,7 @@
 //rewards sampled from bimodal and unimodal distributions
 
 
-domain test_env {
+domain test_env_bimod {
 
         requirements { 
                 integer-valued,         //this domain uses integer variables
