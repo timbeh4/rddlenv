@@ -12,4 +12,4 @@ instance test_env_inst {
 }
 
 
-//To Do: truncated normal, change domain block names, change state diagram
+//To Do: truncated normal, change domain block names, change state diagram, add arguments to states
